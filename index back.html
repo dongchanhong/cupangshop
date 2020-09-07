@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Njobroad survey test-->
+        
+        <title>쿠팡파트너스 쇼핑몰</title>
+        <meta name="description" content="쿠팡파트너스 제휴쇼핑몰 운영">
+        <meta property="og:title" content="쿠팡파트너스" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://.cafe24.com/" />
+        <meta property="og:image" content="http://findposition.cafe24.com/img/titleimage.jpg" />
+        <meta property="og:description" content="" />
+        <meta name="author" content="NjobRoad" />
+        <meta name="keywords" content="쇼핑몰,쿠팡파트너스,SNS,인스타,인플루언서,블로그,쿠팡파트너스쇼핑몰, 쿠팡몰, 쿠팡파트너스 쇼핑몰" />
+    
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+        <title>쿠팡파트너스</title>
+    
+        <!-- Jquery CDN-->
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+        <!-- CSS include -->
+        <link rel="stylesheet" href="css/style.css">
+        
+    
+    
+    
+    </head>
+    
+    
+    
+    <!-- CSS STYLE 
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    -->
+
+    <style>
+        /* 여백 초기화 */
+        /* body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, input, fieldset, legend, select, p, table, th, td, tr, textarea, button, form {margin: 0; padding: 0;} */
+    </style>
+    <style>
+        /* 레이아웃 */
+        #wrap {width: 100%;}
+        #header {width: 100%; height: 150px; background: #C9D9A2;}
+        #contents {width: 100%; height: 800px; background: #fff;}
+        #footer {width: 100%; height: 200px; background: #333;}
+
+        #setRows {margin: auto;text-align: center;}
+
+        table {margin:auto;text-align:center;border: 1px dashed #F3E4DF;}
+        table tr {border: 1px dashed #F3E4DF; }
+        table th {border: 1px dashed #F3E4DF; background:#ECB06B; color:#fff; font-size: 16px; margin: 5px;} 
+        table td {border: 1px dashed #F3E4DF;}
+
+
+    </style>
+
+
+</head>
+<body>
+    <div id="wrap">
+        <div id="header"><div class="tilteText">쿠팡파트너스 - 제휴 쇼핑몰</div></div>
+        
+            
+        </div>
+
+        <div class="nav">
+                  <ul>
+                        <li><a href="#" onclick="myArray1()">여성패션</a></li>
+                        <li><a href="#" onclick="myArray2()">남성패션</a></li>
+                        <li><a href="#" onclick="myArray3()">스포츠</a></li>
+                        <li><a href="#" onclick="myArray4()">신발</a></li>
+                        <li><a href="#" onclick="myArray5()">가방/잡화</a></li>
+                  </ul>
+            
+            </div>
+
+
+        <div id="contents">
+        <!--contents-->
+        <form action="" id="setRows">
+            <p style="margin-top: 10px; margin-left: 40%;">
+                showing
+                <input type="number" id="pageSet" name="rowPerPage" min="2" max="100" value="5" class="i-btn"></input>
+                item
+                <button type="button" onclick="getInputValue();" class="f-btn"><p>적용</p></button>
+            </p>
+        </form>
+        
+        <!-- pagination -->
+        <div id="pagination" style="text-align: center"></div>
+        <div style="margin: auto; text-align: center; font-size: 10px; color:gray">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받고 있습니다.</div>
+
+
+        <div style="text-align: center;">
+            <input id="search-input" class="form-control" type="text">
+        </div>
+
+        <table class="table-test"> 
+            <tbody id="table1"> 
+            <tr> 
+                <th>상품명</th> 
+                <th>가격</th> 
+                <th>상품이미지</th> 
+                <th>바로가기</th>
+            </tr> 
+            </tbody> 
+            </table> 
+
+        
+            
+        <!-- 외부 data 로드 -->
+        <script type="text/javascript" src="js/menu.js"></script>
+        <script type="text/javascript" src="js/menu1.js"></script>
+        <script type="text/javascript" src="js/menu2.js"></script>
+        <script type="text/javascript" src="js/menu3.js"></script>
+        <script type="text/javascript" src="js/menu4.js"></script>
+        <script type="text/javascript" src="js/menu5.js"></script>
+
+
+       
+        <script type="text/javascript" src="js/function.js"></script>
+
+        
+        <!--contents end-->
+        </div>       
+    </div>
+
+    <!-- 본문가리지 않는 플로팅배너 모듈1 -->
+    <div id="banner1">
+    <A style="POSITION: fixed; TOP: 175px; Right: 2%; ">
+    <table style="border:0px; width:120px;">
+    <tr>
+     <td>
+      <script src="https://ads-partners.coupang.com/g.js"></script>
+      <script>
+      new PartnersCoupang.G({"id":221700,"subId":null});
+      </script>
+     </td>
+    </tr>
+    </table>
+    </A>
+    </div>
+    <!-- 모듈 끝 -->
+
+    <!-- 본문가리지 않는 플로팅배너 모듈2 -->
+    <div id="banner2">
+    <A style="POSITION: fixed; TOP: 320px; Right: 2%; ">
+    <table style="border:0px; width:120px;">
+      <tr>
+         <td>
+           <script src="https://ads-partners.coupang.com/g.js"></script>
+           <script>
+           new PartnersCoupang.G({"id":166335,"subId":null});
+           </script>
+         </td>
+      </tr>
+    </table>
+    </A>
+   </div>
+    <!-- 모듈 끝 -->
+
+
+    <!--
+       본문가리지 않는 플로팅배너 모듈3 
+      <A style="POSITION: fixed; TOP: 175px; left: 2%; ">
+        <table style="border:0px; width:120px;">
+          <tr>
+             <td>
+                <ins class="kakao_ad_area" style="display:none;" 
+                data-ad-unit    = "DAN-1hrj9im7k5yy8" 
+                data-ad-width   = "160" 
+                data-ad-height  = "600"></ins> 
+               <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+             </td>
+          </tr>
+        </table>
+        </A>
+        모듈 끝 -->
+ 
+    <script>
+            $('#search-input').on('keyup', function() {
+                var value=$(this).val()
+                console.log('Value:',value)
+                var serachdata = searchTable(value, myArrayFull)
+                buildTable(serachdata,page=1)
+            })
+        
+            function searchTable(value, myArrayFull) {
+                var filterdData = []
+                
+
+                for (var i=0; i<myArrayFull.length;i++) {
+                    console.log(myArrayFull[i])
+                    var name = myArrayFull[i].productName
+                    
+                    if(name.includes(value)) {
+                        filterdData.push(myArrayFull[i])
+                    }
+                }
+                return filterdData
+            }
+        
+        
+    </script>
+        
+
+</body>
+</html>
